@@ -48,6 +48,15 @@ class GenerateModelCommand extends Command
     }
 
     /**
+     * Executes the command (for lumen 5.5 and above)
+     * From Laravel/Lumen 5.5 fire is no longer used
+     */
+    public function handle()
+    {
+        $this->fire();
+    }
+
+    /**
      * @return Config
      */
     protected function createConfig()
