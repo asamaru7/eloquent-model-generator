@@ -5,14 +5,11 @@ Eloquent Model Generator is a tool based on [Code Generator](https://github.com/
 ## Installation
 Step 1. Add Eloquent Model Generator to your project:
 ```
-composer require asamaru7/eloquent-model-generator-for-lumen --dev
+composer require asamaru7/eloquent-model-generator-for-lumen
 ```
 Step 2. Register `GeneratorServiceProvider`:
 ```php
-'providers' => [
-    // ...
-    Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
-];
+$app->register(Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class);
 ```
 Step 3. Configure your database connection.
 
