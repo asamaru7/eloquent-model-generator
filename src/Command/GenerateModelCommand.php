@@ -94,4 +94,9 @@ class GenerateModelCommand extends Command
             ['connection', 'cn', InputOption::VALUE_OPTIONAL, 'Connection property', null],
         ];
     }
+    
+    public function handle()
+    {
+        $this->fire();
+    }
 }
