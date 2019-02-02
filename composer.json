@@ -9,6 +9,6 @@
   },
   "require": {
     "doctrine/dbal": "^2.5",
-    "krlove/code-generator": "^1.0"
+    "krlove/code-generator": "^1.2"
   }
 }
